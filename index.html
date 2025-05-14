@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting to Telegram</title>
     <script>
-        // Пытаемся открыть в Google Chrome, если установлен
-        window.location = "googlechrome://t.me/rustpain";
-
-        // Если не сработает, откроем обычную ссылку через 1.5 секунды
-        setTimeout(function () {
-            window.location = "http://t.me/rustpain";  // Стандартная ссылка
-        }, 1500);
+        // Ожидаем немного, чтобы сайт загрузился
+        setTimeout(function() {
+            window.location = "https://t.me/rustpain";  // Открываем стандартную ссылку
+        }, 500);  // Немного задерживаем, чтобы был виден процесс редиректа
     </script>
 </head>
 <body>
