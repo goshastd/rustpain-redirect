@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Открытие в Chrome</title>
+  <script>
+    // Пытаемся открыть в Google Chrome (если установлен)
+    window.location = "googlechrome://t.me/rustpain";
+
+    // Если не сработает — откроем обычную ссылку через 1.5 секунды
+    setTimeout(function () {
+      window.location = "http://t.me/rustpain";
+    }, 1500);
+  </script>
+</head>
+<body>
+  <p>Открываем Telegram-канал…</p>
+</body>
+</html>
