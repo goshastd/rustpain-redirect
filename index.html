@@ -1,20 +1,20 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Открытие в Chrome</title>
-  <script>
-    // Пытаемся открыть в Google Chrome (если установлен)
-    window.location = "googlechrome://t.me/rustpain";
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to Telegram</title>
+    <script>
+        // Пытаемся открыть в Google Chrome, если установлен
+        window.location = "googlechrome://t.me/rustpain";
 
-    // Если не сработает — откроем обычную ссылку через 1.5 секунды
-    setTimeout(function () {
-      window.location = "http://t.me/rustpain";
-    }, 1500);
-  </script>
+        // Если не сработает, откроем обычную ссылку через 1.5 секунды
+        setTimeout(function () {
+            window.location = "http://t.me/rustpain";  // Стандартная ссылка
+        }, 1500);
+    </script>
 </head>
 <body>
-  <p>Открываем Telegram-канал…</p>
+    <p>Redirecting you to the Telegram channel...</p>
 </body>
 </html>
