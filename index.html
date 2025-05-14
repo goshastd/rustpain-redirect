@@ -1,17 +1,53 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting to Telegram</title>
-    <script>
-        // Ожидаем немного, чтобы сайт загрузился
-        setTimeout(function() {
-            window.location = "https://t.me/rustpain";  // Открываем стандартную ссылку
-        }, 500);  // Немного задерживаем, чтобы был виден процесс редиректа
-    </script>
+    <title>Присоединяйся к RUST PAIN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 40px;
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+        h1 {
+            color: #00ffff;
+        }
+        p {
+            font-size: 18px;
+        }
+        img {
+            margin-top: 20px;
+            width: 250px;
+            height: 250px;
+        }
+        .instructions {
+            margin-top: 30px;
+            font-size: 16px;
+            color: #cccccc;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 24px;
+            font-size: 18px;
+            background-color: #00ffff;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-    <p>Redirecting you to the Telegram channel...</p>
+    <h1>Добро пожаловать в RUST PAIN</h1>
+    <p>Сканируй QR-код или нажми кнопку ниже, чтобы перейти в Telegram-канал.</p>
+    <img src="rustpain_qr.png" alt="QR Code to Telegram">
+    <div class="instructions">
+        <p>Если ты открыл это в TikTok:</p>
+        <p><strong>⋯ → Открыть в браузере</strong></p>
+    </div>
+    <a class="button" href="https://t.me/rustpain">Перейти в Telegram</a>
 </body>
 </html>
