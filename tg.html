@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Открытие Telegram</title>
+  <script>
+    function openTelegram() {
+      // Попытка открыть Telegram-приложение
+      window.location = "tg://resolve?domain=rustpain";
+
+      // Если не сработало — через 2 секунды fallback на web-версию
+      setTimeout(function() {
+        window.location = "https://t.me/rustpain";
+      }, 2000);
+    }
+  </script>
+</head>
+<body onload="openTelegram()">
+  <p>Открытие Telegram…</p>
+</body>
+</html>
